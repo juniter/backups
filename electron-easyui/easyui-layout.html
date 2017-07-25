@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+        window.nodeRequire = require;
+        delete window.require;
+        delete window.exports;
+        delete window.module;
+        </script>
+        <title>Fluid Layout - jQuery EasyUI Demo</title>
+        <!--     <link rel="stylesheet" type="text/css" href="theme/bootstrap/easyui.css">
+        <link rel="stylesheet" type="text/css" href="theme/icon.css"> -->
+        <link rel="stylesheet" type="text/css" href="demo.css">
+        <!--         <link rel="stylesheet" type="text/css" href="themes/bootstrap/easyui.css"> -->
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <!--         <script src="jquery.easyui.min.js" type="text/javascript" charset="utf-8" async defer></script>
+        <script src="locale/easyui-lang-en.js" type="text/javascript" charset="utf-8" async defer></script> -->
+        <script type="text/javascript" src="easyloader.js"></script>
+        <script>
+        easyloader.theme='bootstrap';
+        easyloader.locale='en';
+        </script>
+    </head>
+    <body>
+        <div class="easyui-layout" style="width:100%;height:100%;">
+            <div id="p" data-options="region:'west'" style="width:20%;padding:10px">
+                <p>width: 30%</p>
+            </div>
+            <div class="easyui-tabs" data-options="region:'center',tabWidth:112,fit:true">
+                
+                <div title="About" style="background-color: pink;width: 100%;margin-left: 5px">
+                    hahahah
+                </div>
+                <div title="Title2" style="padding:0px">
+                    
+                </div>
+                <div title="Title3" style="padding:0px">
+                    
+                </div>
+            </div>
+        </div>
+        <div id="footer" style="padding:5px;">
+            Footer Content.
+        </div>
+    </body>
+</html>
